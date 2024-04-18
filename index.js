@@ -6,43 +6,6 @@ const {
   addContact,
 } = require("./contacts");
 
-// async function invokeAction(action, ...args) {
-//   switch (action) {
-//     case "list":
-//       console.log(await listContacts());
-//       break;
-
-//     case "get":
-//       console.log(await getContactById(...args));
-//       break;
-
-//     case "add":
-//       console.log(await addContact(...args));
-//       break;
-
-//     case "remove":
-//       console.log(await removeContact(...args));
-//       break;
-
-//     default:
-//       console.warn("\x1b[31m Unknown action type!");
-//   }
-
-/*
-  try {
-    const result = await eval(`${action} (...args)`);
-    console.table(result);
-  } catch (error) {
-    console.error(error.message);
-  }
-}
-*/
-
-// const [, , action, ...args] = process.argv;
-// invokeAction(action, ...args);
-
-// module.exports = invokeAction;
-
 program
   .option("-a, --action <type>", "choose action")
   .option("-i, --id <type>", "user id")
